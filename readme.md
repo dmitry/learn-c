@@ -10,11 +10,15 @@ int **pb;
 
 take third element of an array
 
-```
-a[3] == *(a + 3) == 3[a] == *(&a[0] + 3)
-```
+`a[3] == *(a + 3) == 3[a] == *(&a[0] + 3)` - basically array variable is a pointer on a first element of array
 
-basically array variable is a pointer on a first element of array
+```c
+if (a[3] == *(a + 3) &&
+  a[3] == 3[a] &&
+  a[3] == *(&a[0] + 3)) {
+  printf("yey");
+}
+```
 
 `*pa` - get value
 
