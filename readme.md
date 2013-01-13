@@ -17,14 +17,17 @@ a[3] == *(a + 3) == 3[a] == *(&a[0] + 3)
 basically array variable is a pointer on a first element of array
 
 `*pa` - get value
+
 `pa` - get or set memory location
 
 `pa = a`
+
 `pa = &a[0]` - the same as above
 
 `*a` - get first element of array
 
 `int &b` - reference, cannot be NULL or uninitialized
+
 `pa = &b` - get address of variable and assign it to pointer
 
 `**pb = &pa` - reference on reference
