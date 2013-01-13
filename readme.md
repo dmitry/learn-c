@@ -35,3 +35,7 @@ if (a[3] == *(a + 3) &&
 `pa = &b` - get address of variable and assign it to pointer
 
 `**pb = &pa` - reference on reference
+
+## References
+
+* http://en.cppreference.com/w/
