@@ -36,6 +36,28 @@ if (a[3] == *(a + 3) &&
 
 `**pb = &pa` - reference on reference
 
+### Function pointer (similar to C++ templates)
+
+```c
+#include <stdio.h>
+
+int referenced(int val) {
+  return 2 * val;
+}
+
+void execute(int (*ptr)(int)) {
+  printf("%d\n", ptr(3));
+}
+
+int main() {
+  int (*ptr_func)(int) = &referenced;
+
+  execute(ptr_func);
+
+  return 1;
+}
+```
+
 ## References
 
 * http://en.cppreference.com/w/
