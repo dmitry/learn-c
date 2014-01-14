@@ -58,6 +58,13 @@ int main() {
 }
 ```
 
+## Debugging
+
+* strace
+* ltrace
+* dtrace
+* ktrace
+
 ## References
 
 * http://en.cppreference.com/w/
